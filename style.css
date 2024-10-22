@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landing-page{
+    width: 100%;
+    min-height: 100vh;
+}
+
+    /* Navigation Bar */
+
+.nav-bar{
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo{
+    background-image: url(images/logo.svg);
+    width: 100px;
+    height: 80%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
