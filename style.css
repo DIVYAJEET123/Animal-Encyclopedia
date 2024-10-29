@@ -7,27 +7,33 @@
 .landing-page{
     width: 100%;
     min-height: 100vh;
+    /* background-color: aqua; */
+    background-image: url("/images/slider-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: color-dodge;
 }
 
     /* Navigation Bar */
 
 .nav-bar{
     width: 100%;
-    height: 4.5rem;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: ghostwhite;
+    /* background-color: #e1e1e1; */
+    background:transparent ;
 }
 .logo{
-    /* background-image: url(images/Untitled\ design.png); */
-    width: 100px;
+    width: 4rem;
     height: 80%;
-    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2rem;
 }
+
 .logo img{
     width: 100%;
     height: 90%;
@@ -42,35 +48,80 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
+    width: 500px;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 100;
+}
+p a{
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 10px;
+}
+p a:active , a:hover{
+    color: #fff;
+    background-color: #037171;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: 0.6s;
 }
 .search-bar{
-    width: 20%;
+    width: 25%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 0.8rem;
     height: 80%;
+    display: none;
+    
 }
 .search-bar input{
-    background: transparent;
     outline: none;
-    border: none;
+    /* border: none; */
+    /* background : transparent;  */
     width: 60%;
-    height: 90%;
-    border: 2px solid lightgrey;
-    border-radius: 16px;
-    padding-left: 12px;
+    height: 80%;
     font-size: 1rem;
+    border: 2px solid rgb(165, 163, 163);
+    border-radius: 80px;
+    padding-left: 12px;
+    /* font-size: 2rem; */
+    background: #fff;
+    opacity: 0.7;
 }
 .search-bar button{
-    width: 30%;
-    height: 90%;
     border: none;
-    border-radius: 12px;
-    background-color:#3ec934;
-    font-size: 1.2rem;
-    color: white;
+    color: #fff;
+    font-size: 1.1rem;
+    background-color: #037171;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
 }
-.logo{
-    width: 10%;
+.menu-bar{
+    width: 50px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    color: #037171;
 }
+@media (max-width:900px) {
+    .nav-tags{
+        display:none;
+    }
+    .search-bar{
+        width: 50%;
+    }
+}
+@media (max-width:600px){
+    .logo p{
+        display: none;
+    }
+}
+
+/* Image Slider Section */
+
+
+
