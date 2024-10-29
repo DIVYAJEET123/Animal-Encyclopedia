@@ -7,17 +7,23 @@
 .landing-page{
     width: 100%;
     min-height: 100vh;
+    /* background-color: aqua; */
+    background-image: url("/images/slider-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: color-dodge;
 }
 
     /* Navigation Bar */
 
 .nav-bar{
     width: 100%;
-    height: 4.5rem;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #e1e1e1;
+    /* background-color: #e1e1e1; */
+    background:transparent ;
 }
 .logo{
     width: 4rem;
@@ -42,17 +48,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 35%;
+    width: 500px;
     font-size: 1.1rem;
+    position: relative;
+    z-index: 100;
 }
 p a{
     text-decoration: none;
     color: #000000;
+    padding: 5px 10px;
 }
-p a:hover{
-    color: #037171;
-    border-bottom:3px solid #037171;
-    /* background-color: blue; */
+p a:active , a:hover{
+    color: #fff;
+    background-color: #037171;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: 0.6s;
 }
 .search-bar{
     width: 25%;
@@ -61,13 +72,14 @@ p a:hover{
     justify-content: center;
     gap: 0.8rem;
     height: 80%;
+    display: none;
     
 }
 .search-bar input{
     outline: none;
     /* border: none; */
     /* background : transparent;  */
-    width: 70%;
+    width: 60%;
     height: 80%;
     font-size: 1rem;
     border: 2px solid rgb(165, 163, 163);
@@ -75,14 +87,15 @@ p a:hover{
     padding-left: 12px;
     /* font-size: 2rem; */
     background: #fff;
+    opacity: 0.7;
 }
 .search-bar button{
     border: none;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     background-color: #037171;
-    height: 80%;
-    width: 12%;
+    height: 42px;
+    width: 42px;
     border-radius: 50%;
 }
 .menu-bar{
@@ -91,6 +104,24 @@ p a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #037171;
 }
+@media (max-width:900px) {
+    .nav-tags{
+        display:none;
+    }
+    .search-bar{
+        width: 50%;
+    }
+}
+@media (max-width:600px){
+    .logo p{
+        display: none;
+    }
+}
+
+/* Image Slider Section */
+
+
+
